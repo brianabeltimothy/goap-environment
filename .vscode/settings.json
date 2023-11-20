@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "machine-learning-m318714.sln"
+    "dotnet.defaultSolution": "goap-environment.sln"
 }
