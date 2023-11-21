@@ -12,5 +12,4 @@ public class GoToHospital : GAction
     {
         return true;
     }
-
 }
