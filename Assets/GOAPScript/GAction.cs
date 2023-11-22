@@ -26,6 +26,8 @@ public abstract class GAction : MonoBehaviour {
     public Dictionary<string, int> effects;
     // State of the agent
     public WorldStates agentBeliefs;
+    public GInventory inventory;
+    public WorldStates beliefs;
     // Are we currently performing an action?
     public bool running = false;
 
@@ -61,6 +63,9 @@ public abstract class GAction : MonoBehaviour {
                 effects.Add(w.key, w.value);
             }
         }
+
+        inventory = this.GetComponent<GAgent>().inventory;
+        beliefs = this.GetComponent<GAgent>().beliefs;
     }
 
     public bool IsAchievable() {
